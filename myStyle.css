@@ -1,0 +1,291 @@
+ /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+--------------------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+:root{
+	--dark-color: rgba(38,29,29,1);
+	--light-color: rgba(223,191,26,1);
+	--bold-color: rgba(216,0,39,1);
+	--transparent-dark: rgba(37,31,31,0.8);
+}
+body{
+	/*font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size:14px;*/
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	line-height: 1.5em;
+}
+#welcome{
+	position: relative;
+	width:100%;
+	height:100vh;
+	background: url('assets/welcome-pic.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#menu-btn{
+	position: fixed;
+	z-index:1000;
+	top:3em;
+	right:1em;
+	height:48px;
+}
+#welcome .red-icon{
+	height:18px;
+}
+.info-box{
+	position: absolute;
+	height:213px;
+	width:274px;
+	top:30vh;
+	color:white;
+	background-color: var(--transparent-dark);
+	text-align: center;
+}
+.action-btn{
+	position: absolute;
+	bottom:0;
+	width:50%;
+	height:80px;
+	box-sizing: border-box;
+	background-color:var(--bold-color);
+}
+#directions-btn{
+	border-right:1px solid rgba(255,255,255,0.5);
+}
+#call-btn{
+	border-left:1px solid rgba(255,255,255,0.5);
+	right:0;
+}
+.action-btn-icon{
+	position: absolute;
+	height:24px;
+	width:24px;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+.action-btn-icon path{
+	fill:white;
+}
+h1{
+	font-size:24px;
+	font-family: 'Courgette', cursive;
+}
+.info-box h1{
+	margin-bottom:1em;
+}
+.center{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+#logo{
+	position: absolute;
+	height:100px;
+	top:1em;
+	left:1em;
+}
+section{
+	padding:5em 1em;
+}
+#our-story{
+	background-color: var(--dark-color);
+	text-align: center;
+}
+.subheader{
+	text-align: center;
+	font-size:24px;
+	font-family: 'Courgette',cursive;
+	margin-bottom:2em;
+}
+.subheader span{
+	color:var(--light-color);
+}
+#our-story img{
+	height:118px;
+	width:125px;
+	margin-bottom:1em;
+}
+#our-story p{
+	text-align: justify;
+}
+#signature-pizzas{
+	background:url('assets/wood-table.jpg');
+	background-size: cover;
+}
+/*slideshow circle container*/
+.circle{
+    width: 120px; 
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin:auto;
+    visibility: hidden;
+/*    padding-top: 4em;*/
+}
+.circle.selected{
+ /* display: block;*/
+  visibility: visible;
+}
+/*Slideshow dots*/
+#dots {
+  width:100%;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+}
+#dots > span{
+  width:10px;
+  height:10px;
+  background-color:white;
+  margin:2px;
+  display: inline-block;
+  border-radius: 100%
+}
+#dots > .selected{
+  background-color:var(--bold-color); 
+}
+.arrow-btn{
+	height:30px;
+}
+.arrow-btn.right{
+	-webkit-transform:scaleX(-1);
+	transform: scaleX(-1);
+}
+/*slideshow*/
+#slideshow{
+  width:100%;
+  height: 300px;
+}
+#slideshow .arrow-btn{
+	position: absolute;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+/*Slideshow left arrow*/
+#slideshow > img:nth-child(1){
+    left: 1em;
+}
+/*slideshow right angle*/
+#slideshow > img:last-of-type{
+    right: 1em;
+}
+#slideshow .arrow-btn:hover{
+    background-color: var(--main-color);
+    padding: 0.5em 0;
+    border-radius: 2px;
+}
+.circle img{
+	height:100px;
+	width:100px;
+	border-radius: 60px;
+    border: 10px solid black;
+}
+#slideshow p{
+	padding-top:1em;
+}
+.menu-card{
+	position: relative;
+	width:144px;
+	height:204px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin:0 auto;
+}
+#main-menu{
+	background: url('assets/menu.jpg');
+	background-size: cover;
+}
+#our-menus{
+	background-color: var(--dark-color);
+}
+
+.menu-card h3{
+	position: absolute;
+	text-align: center;
+	background-color: var(--bold-color);
+	padding:1em 0;
+	bottom:0;
+	width:100%;
+}
+#dining-menu{
+	background: url("assets/dining.jpg");
+	background-size: cover;
+}
+#catering-menu{
+	background: url("assets/catering.jpg");
+	background-size: cover;
+}
+#dining-menu{
+	margin-top:3em;
+	margin-bottom:3em;
+}
+.emphasis{
+	font-family: 'Courgette', cursive;
+	font-size:48px;
+}
+#reviews{
+	position: relative;
+	background-color: var(--dark-color);
+	text-align: center;
+}
+#reviews .picture{
+	height:100px;
+	width:100px;
+}
+#reviews #dots{
+	padding-top:3em;
+}
+#picture-one{
+	background: url("assets/face.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	margin: 4em auto;
+}
+.name{
+	padding-top:2em;
+	font-weight:300;
+}
+.current-page{
+	color:var(--light-color);
+}
+footer{
+	background-color:var(--dark-color);
+	border-top:1px solid white;
+	text-align: center;
+	padding-top:3em;
+	padding-bottom:3em;
+}
+footer ul li{
+	padding:1em;
+}
+footer a{
+	color:white;
+	text-decoration-line: none;
+	font-size: 12px;
+}
+footer > img{
+	height:100px;
+	width: 100px;
+}
+footer p{
+	font-size:12px;
+}
+
