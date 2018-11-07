@@ -38,12 +38,13 @@ body{
 }
 .info-box{
 	position: absolute;
-	height:213px;
-	width:274px;
+	height:250px;
+	width:300px;
 	top:30vh;
 	color:white;
 	background-color: var(--transparent-dark);
 	text-align: center;
+	top
 }
 .action-btn{
 	position: absolute;
@@ -95,8 +96,9 @@ h6{
 p{
 	font-size: 16px;
 }
-.info-box h1{
+.info-box h2{
 	margin-bottom:1em;
+	font-family: 'Courgette', cursive;
 }
 .center{
 	position: absolute;
@@ -122,7 +124,6 @@ section{
 }
 .subheader{
 	text-align: center;
-	font-size:24px;
 	font-family: 'Courgette',cursive;
 	margin-bottom:2em;
 }
@@ -235,7 +236,7 @@ section{
 	background-color: var(--dark-color);
 }
 
-.menu-card h3{
+.menu-card h4{
 	position: absolute;
 	text-align: center;
 	background-color: var(--bold-color);
@@ -362,9 +363,9 @@ footer p{
 }
 .header-container h1{
 	width:100%;
-	height:25px;
+	height:35px;
 	text-align: center;
-	padding-top:4em;
+	padding-top:3em;
 }
 .banner{
 	width:100%;
@@ -408,6 +409,22 @@ footer p{
 	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/beverage.jpg");
 	background-size: cover;
 	background-position: center;
+}
+#about-content{
+	text-align: center;
+}
+#about-content img{
+	height:121px;
+	width:163px;
+}
+#about-content > h3 > span{
+	font-size: xx-large;
+	color:rgba(196,196,196,.9);
+}
+#about-content > p{
+	text-align: left;
+	text-indent: 2em;
+	line-height: 1.5em;
 }
 
 
