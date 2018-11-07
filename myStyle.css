@@ -74,8 +74,26 @@ body{
 	fill:white;
 }
 h1{
-	font-size:24px;
+	font-size:32px;
 	font-family: 'Courgette', cursive;
+}
+h2{
+	font-size:26px;
+}
+h3{
+	font-size: 22px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-size: 16px;
 }
 .info-box h1{
 	margin-bottom:1em;
@@ -96,6 +114,7 @@ h1{
 }
 section{
 	padding:5em 1em;
+	background-color:var(--dark-color);
 }
 #our-story{
 	background-color: var(--dark-color);
@@ -334,3 +353,61 @@ footer p{
 	from {opacity: .4;}
 	to {opacity: 1}
 }
+.header-container{
+	background:url("assets/wood-table.jpg");
+	background-size: cover;
+	height:50vh;
+	box-sizing: border-box;
+	position: relative;
+}
+.header-container h1{
+	width:100%;
+	height:25px;
+	text-align: center;
+	padding-top:4em;
+}
+.banner{
+	width:100%;
+	height:100px;
+	position: relative;
+	margin-bottom: 3em;
+}
+.menu-content{
+	padding:0;
+	padding-bottom: 3em;
+}
+.menu-content h2{
+	height:22px;
+	margin-bottom:auto;
+}
+#pizzas > .banner{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/margherita-pizza.jpg");
+	background-position: center;
+}
+#appetizers > .banner{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/catering.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#salads > .banner{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/salad.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#entrees > .banner{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/entree.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#desserts > .banner{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/dessert.jpg");
+	background-size: cover;
+	background-position: 50% 70%;
+}
+#beverages > .banner{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/beverage.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
