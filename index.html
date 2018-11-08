@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Homepage</title>
 	<link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans+Condensed:300,700|Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
 <!-- 	<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
  --></head>
@@ -96,6 +97,7 @@
 		</div>
 	</div>
 	<section id="our-story">
+		<div class="content">
 		<h2 class="subheader"><span>Our</span> Story</h2>
 		<img src="assets/our-story.jpg">
 		<p>It all started in my mother’s kitchen. Fresh ingredients
@@ -106,6 +108,7 @@
 		has always been a staple in our family, and here at Pizza 
 		Please we offer diners a quality and authentic experience 
 		for the whole family to enjoy.</p>
+		</div>
 	</section>
 	<section id="signature-pizzas">
 		<h2 class="subheader" style="margin-bottom:0;"><span>Signature</span> Pizzas</h2>
@@ -163,14 +166,22 @@
 	</section>
 	<section id="our-menus">
 		<h2 class="subheader"><span>Our</span> Menus</h2>
-		<div class="menu-card" id="main-menu">
-			<h4>Main Menu</h4>
-		</div>
-		<div class="menu-card" id="dining-menu">
-			<h4>Dining</h4>
-		</div>
-		<div class="menu-card" id="catering-menu">
-			<h4>Catering</h4>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4">
+				<div class="box menu-card" id="main-menu">
+					<h4>Main Menu</h4>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="box menu-card" id="dining-menu">
+					<h4>Dining</h4>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="box menu-card" id="catering-menu">
+					<h4>Catering</h4>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="reviews">
