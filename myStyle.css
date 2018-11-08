@@ -427,4 +427,29 @@ footer p{
 	line-height: 1.5em;
 }
 
+.yellow{
+	background-color: var(--light-color);
+	color:black;
+	width:70%;
+	margin:0 auto;
+	padding:1em;
+	z-index:10;
+	position: relative;
+	text-align: left;
+}
+#contact-content > img{
+	width:200px;
+	height:250px;
+}
+.wrapper img{
+	width:70%;
+	z-index:0;
+}
+.black{
+	width:20px;
+	height:20px;
+}
+.black path{
+	fill:black;
+}
 
