@@ -484,4 +484,7 @@ footer p{
 		padding-top:5em;
 		padding-right:2em;
 	}
+	.banner{
+		height:150px;
+	}
 }
