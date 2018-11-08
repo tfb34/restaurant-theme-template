@@ -37,6 +37,7 @@ body{
 	top:3em;
 	right:1em;
 	height:48px;
+	transition: 0.5s;
 }
 #welcome .red-icon{
 	height:18px;
@@ -459,7 +460,29 @@ footer p{
 .black path{
 	fill:black;
 }
-
+.myContainer{
+	transition: 0.5s;
+}
+.shift-left{
+	transform: translateX(-180px);
+}
+#mobile-menu-container{
+	position: fixed;
+	width:180px;
+	height:100vh;
+	background-color:black;
+	transition: 0.5s;
+	right:-180px;
+	text-align: center;
+}
+#mobile-menu-container img{
+	padding-top:2em;
+}
+#mobile-menu-container a{
+	color: white;
+    text-decoration: none;
+    padding: 1em;
+}
 @media only screen and (min-width: 768px){
 	.content{
 		width:600px;
@@ -486,5 +509,11 @@ footer p{
 	}
 	.banner{
 		height:150px;
+	}
+	.yellow{
+		width: 300px;
+	    position: absolute;
+	    bottom: 3em;
+	    right: 4em;
 	}
 }

@@ -76,3 +76,13 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+function toggleMenu(){
+	var container = document.getElementsByClassName('myContainer')[0];
+	var menuBtn = document.getElementById('menu-btn');
+	var menuContainer = document.getElementById('mobile-menu-container');
+	container.classList.toggle("shift-left");
+	menuBtn.classList.toggle("shift-left");
+	menuContainer.classList.toggle("shift-left");
+
+}
