@@ -424,11 +424,11 @@ footer p{
 	height:121px;
 	width:163px;
 }
-#about-content > h3 > span{
+#about-content  h3 span{
 	font-size: xx-large;
 	color:rgba(196,196,196,.9);
 }
-#about-content > p{
+#about-content p{
 	text-align: left;
 	text-indent: 2em;
 	line-height: 1.5em;
@@ -462,7 +462,7 @@ footer p{
 
 @media only screen and (min-width: 768px){
 	.content{
-		max-width:500px;
+		width:600px;
 		margin:0 auto;
 	}
 	#our-story img{
@@ -470,11 +470,18 @@ footer p{
 		width:225px;
 		float:left;
 		padding-right:2em;
-		padding-bottom:0.5 em;
+		padding-bottom:0.5em;
 		margin-bottom:0;
 	}
 	#dining-menu{
 		margin-top:0;
 		margin-bottom:0;
+	}
+	#about-content img{
+		height:221px;
+		width:263px;
+		float:left;
+		padding-top:5em;
+		padding-right:2em;
 	}
 }
