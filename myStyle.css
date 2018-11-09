@@ -330,7 +330,7 @@ footer p{
 	font-size:12px;
 }
 .slideshow-container{
-	height:340px;
+	height:100%;
 	width: 100%;
 	position: relative;
 }
@@ -390,6 +390,7 @@ footer p{
 }
 #pizzas > .banner{
 	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("assets/margherita-pizza.jpg");
+	background-size: cover;
 	background-position: center;
 }
 #appetizers > .banner{
@@ -424,7 +425,7 @@ footer p{
 	height:121px;
 	width:163px;
 }
-#about-content  h3 span{
+#about-content h3 span{
 	font-size: xx-large;
 	color:rgba(196,196,196,.9);
 }
@@ -435,6 +436,7 @@ footer p{
 }
 
 .yellow{
+	display: none;
 	background-color: var(--light-color);
 	color:black;
 	width:70%;
@@ -480,7 +482,10 @@ footer p{
 #mobile-menu-container a{
 	color: white;
     text-decoration: none;
-    padding: 1em;
+    font-size:16px;
+}
+#mobile-menu-container a li{
+	padding:1em;
 }
 #menu-bar{
 	display: none;
@@ -488,6 +493,30 @@ footer p{
 .signature-pizzas-desktop{
 	display: none;
 }
+.hide{
+	display: none;
+}
+/*#contact-content .row{
+	display: none;
+}*/
+	#contact-content .row{
+		max-width:900px;
+		margin:0 auto;
+		margin-bottom:4em;
+	}
+	#contact-content .row > div{
+		margin-bottom:4em;
+	}
+	.contact-icon{
+		height:50px;
+		width:50px;
+		display: block;
+    	margin: 0 auto;
+    	margin-bottom:2em;
+	}
+	.contact-icon path{
+		fill: var(--light-color);
+	}
 @media only screen and (min-width: 768px){
 	.content{
 		width:600px;
@@ -526,6 +555,7 @@ footer p{
 	a{
 		font-size:14px !important;
 	}
+
 	#menu-btn{
 		display: none;
 	}
@@ -539,7 +569,7 @@ footer p{
 	#menu-bar a{
 		color:white;
 		text-decoration: none;
-		font-size:24px;
+		font-size:22px !important;
 	}
 	#menu-bar td{
 		position: relative;
@@ -597,16 +627,20 @@ footer p{
 		width: 244px;
     	height: 354px;
 	}
-	.slideshow-container{
+	/*.slideshow-container{
 		height:480px;
+	}*/
+	#reviews{
+		max-width:700px;
 	}
 	#reviews .picture{
-		height:150px;
-		width:150px;
+		height:190px;
+		width:190px;
 	}
 	.emphasis{
 		font-size: 78px;
     	height: 80px;
+    	margin-top:0.5em;
 	}
 	.dot{
 		height: 15px;
@@ -639,12 +673,13 @@ footer p{
 		padding-top:1em;
 		height:500px;
 	}
-	.yellow{
+	/*.yellow{
 		width:400px;
 		padding:3em 0 3em 3em;
 	}
+*/	
 	.wrapper img{
-		width: 722px;
+		width: 622px;
 	}
 	.menu-table {
 		width:800px;
@@ -656,5 +691,83 @@ footer p{
 	.banner{
 		height:250px;
 	}
+	section{
+	padding:8em 1em;
+	}
+	#about-content img{
+		padding-top:7em;
+		height:286px;
+		width:386px;
+	}
+	.content{
+		width:900px;
+	}
+	#about-content h3 span{
+		font-size: 52px;
+	}
 
+}	
+@media only screen and (min-width: 1440px){
+	/*#reviews .picture{
+		float:left;
+		height:250px;
+		width:250px;
+	}*/
+	#about-content h3 span{
+		font-size: 72px;
+	}
+	#reviews{
+		max-width: 800px;
+	}
+	#reviews .picture{
+		height:250px;
+		width:250px;
+	}
+	.emphasis{
+		margin-top: 1em;
+	}
+	#our-menus{
+		max-width: 1200px;
+    	margin: 0 auto;
+	}
+	#our-story img{
+		width: 457px;
+		height:348px;
+	}
+	.content:after{
+		content:"";
+		clear:both;
+		display: block;
+	}
+	.info-box{
+		width: 40vw;
+    	height: 40vh;
+	}
+
+	h2{
+		font-size:42px;
+	}
+	h3{
+		font-size: 32px;
+	}
+	h4{
+		font-size: 28px;
+	}
+	h5{
+		font-size: 26px;
+	}
+	h6{
+		font-size: 22px;
+	}
+	p{
+		font-size: 22px;
+		line-height: 1.5em;
+	}
+	.menu-table td{
+		font-size:22px;
+		padding:1em;
+	}
+	footer p{
+		font-size: 14px;
+	}
 }
