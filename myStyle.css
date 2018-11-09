@@ -50,7 +50,6 @@ body{
 	color:white;
 	background-color: var(--transparent-dark);
 	text-align: center;
-	top
 }
 .action-btn{
 	position: absolute;
@@ -220,7 +219,7 @@ section{
 .circle img{
 	height:100px;
 	width:100px;
-	border-radius: 60px;
+	border-radius: 50%;
     border: 10px solid black;
 }
 #slideshow p{
@@ -284,21 +283,21 @@ section{
 	background: url("assets/face.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 50px;
+	border-radius: 50%;
 	margin: 4em auto;
 }
 #picture-two{
 	background: url("assets/face2.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 50px;
+	border-radius: 50%;
 	margin: 4em auto;
 }
 #picture-three{
 	background: url("assets/face3.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 50px;
+	border-radius: 50%;
 	margin: 4em auto;
 }
 .name{
@@ -483,6 +482,12 @@ footer p{
     text-decoration: none;
     padding: 1em;
 }
+#menu-bar{
+	display: none;
+}
+.signature-pizzas-desktop{
+	display: none;
+}
 @media only screen and (min-width: 768px){
 	.content{
 		width:600px;
@@ -516,4 +521,119 @@ footer p{
 	    bottom: 3em;
 	    right: 4em;
 	}
+}
+@media only screen and (min-width: 1024px){
+	a{
+		font-size:14px !important;
+	}
+	#menu-btn{
+		display: none;
+	}
+	#logo{
+		display: none;
+	}
+	#menu-bar{
+		display: block;
+		text-align: center;
+	}
+	#menu-bar a{
+		color:white;
+		text-decoration: none;
+		font-size:24px;
+	}
+	#menu-bar td{
+		position: relative;
+		vertical-align: middle;
+		padding:0 2em 0 2em;
+	}
+	#menu-bar img{
+		height:150px;
+		width:150px;
+	}
+	#menu-bar table{
+		margin:0 auto;
+	}
+	#menu-bar #lasso{
+		width:100%;
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+	}
+	h1{
+		font-size:32px;
+		font-family: 'Courgette', cursive;
+	}
+	h2{
+		font-size:36px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	h4{
+		font-size: 22px;
+	}
+	h5{
+		font-size: 20px;
+	}
+	h6{
+		font-size: 18px;
+	}
+	p{
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+	footer p{
+		font-size: 14px;
+	}
+	.info-box{
+		height: 280px;
+    	width: 450px;
+    	top:35vh;
+	}
+	.menu-card{
+		width: 244px;
+    	height: 354px;
+	}
+	.slideshow-container{
+		height:480px;
+	}
+	#reviews .picture{
+		height:150px;
+		width:150px;
+	}
+	.emphasis{
+		font-size: 78px;
+    	height: 80px;
+	}
+	.dot{
+		height: 15px;
+	    width: 15px;
+	    margin: 0 8px;
+	}
+	#slideshow{
+		display: none;
+	}
+	.circle img{
+		height:150px;
+		width:150px;
+	}
+	.circle{
+		width:100%;
+		height: 100%;
+		position: relative;
+		visibility: visible;
+	}
+	.signature-pizzas-desktop{
+		display: block;
+	}
+	.signature-pizzas-desktop .row{
+		padding:3.5em 0;
+	}
+	.action-btn{
+		display: none;
+	}
+
 }
