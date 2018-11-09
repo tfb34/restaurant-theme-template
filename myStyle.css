@@ -635,5 +635,9 @@ footer p{
 	.action-btn{
 		display: none;
 	}
+	.header-container{
+		padding-top:1em;
+		height:500px;
+	}
 
 }
