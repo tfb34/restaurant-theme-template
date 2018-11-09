@@ -646,5 +646,15 @@ footer p{
 	.wrapper img{
 		width: 722px;
 	}
+	.menu-table {
+		width:800px;
+	}
+	.menu-table td{
+		font-size:18px;
+		padding:1em;
+	}
+	.banner{
+		height:250px;
+	}
 
 }
